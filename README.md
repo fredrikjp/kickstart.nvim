@@ -36,6 +36,12 @@ External Requirements:
 > See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
 > and quick install snippets
 
+### Install External Dependencies For Kickstarter Additions
+
+External requirements:
+- Ranger: `sudo apt install ranger`
+- Node.js on Windows Subsystem (Needed for pyright installation):[Node.js](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) 
+
 ### Install Kickstart
 
 > **NOTE**
