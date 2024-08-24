@@ -6,7 +6,7 @@ return {
 
   { -- Ranger file manager
     'jensjpedersen/ranger_nvim',
-    opts = { fileopener = 'rifle', mapping = '<leader>f' },
+    opts = { fileopener = 'nvim', mapping = '<leader>f' },
     config = function(_, opts)
       require('ranger_nvim').setup(opts)
     end,
