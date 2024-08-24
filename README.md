@@ -41,6 +41,8 @@ External Requirements:
 External requirements:
 - Ranger: `sudo apt install ranger`
 - Node.js on Windows Subsystem (Needed for pyright installation):[Node.js](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) 
+- Latex (Needed for vimtex): `sudo apt install texlive-full`
+- Zathura pdf viewer (Needed for vimtex): `sudo apt install zathura`
 
 ### Install Kickstart
 
