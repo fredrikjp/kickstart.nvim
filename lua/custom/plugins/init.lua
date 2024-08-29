@@ -61,7 +61,7 @@ return {
       show_symbol_details = true,
       preview_bg_highlight = 'Pmenu',
       autofold_depth = 1,
-      auto_unfold_hover = true,
+      auto_unfold_hover = false,
       fold_markers = { '', '' },
       wrap = false,
       keymaps = { -- These keymaps can be a string or a table for multiple keys
