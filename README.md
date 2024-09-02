@@ -44,6 +44,13 @@ External requirements:
 - Latex (Needed for vimtex): `sudo apt install texlive-full`
 - Zathura pdf viewer (Needed for vimtex): `sudo apt install zathura`
 
+### Extra software to use with NeoVim
+
+- VcXsrv (Windows installation for gui applications on WSL): [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
+[WSL2 resolution fix](https://superuser.com/questions/1370361/blurry-fonts-on-using-windows-default-scaling-with-wsl-gui-applications-hidpi)
+- Tmux: `sudo apt install tmux`
+- Lazygit: `sudo apt install lazygit`
+
 ### Install Kickstart
 
 > **NOTE**
