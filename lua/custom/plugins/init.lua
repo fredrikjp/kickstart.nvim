@@ -3,6 +3,9 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+  { -- Spellcheck keymap
+    vim.keymap.set('n', '<leader>dw', ':setlocal spell spelllang=nb,en<CR>', { desc = 'Spellcheck' }),
+  },
 
   { -- Ranger file manager
     'jensjpedersen/ranger_nvim',
