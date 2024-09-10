@@ -7,6 +7,10 @@ return {
     vim.keymap.set('n', '<leader>dw', ':setlocal spell spelllang=nb,en<CR>', { desc = 'Spellcheck' }),
   },
 
+{-- Startify
+  'mhinz/vim-startify',
+},
+
   { -- Ranger file manager
     'jensjpedersen/ranger_nvim',
     opts = { fileopener = 'nvim', mapping = '<leader>f' },
@@ -119,6 +123,23 @@ return {
       vim.keymap.set('n', '<leader>ts', ':SymbolsOutline<CR>', { desc = 'Symbols Outline' })
     end,
   },
+{
+  "christoomey/vim-tmux-navigator",
+  cmd = {
+    "TmuxNavigateLeft",
+    "TmuxNavigateDown",
+    "TmuxNavigateUp",
+    "TmuxNavigateRight",
+    "TmuxNavigatePrevious",
+  },
+  keys = {
+    { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
+    { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
+    { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
+    { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
+    { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+  },
+}
 
   --{ -- Vista view and search LSP symbols and tags
   --  'liuchengxu/vista.vim',
