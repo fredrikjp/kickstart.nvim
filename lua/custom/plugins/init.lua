@@ -7,9 +7,19 @@ return {
     vim.keymap.set('n', '<leader>dw', ':setlocal spell spelllang=nb,en<CR>', { desc = 'Spellcheck' }),
   },
 
-{-- Startify
-  'mhinz/vim-startify',
-},
+  { -- Startify
+    'mhinz/vim-startify',
+  },
+
+  { -- Ultisnips
+    'SirVer/ultisnips',
+    requires = { 'honza/vim-snippets' },
+    config = function()
+      vim.g.UltiSnipsExpandTrigger = '<tab>'
+      vim.g.UltiSnipsJumpForwardTrigger = '<tab>'
+      vim.g.UltiSnipsJumpBackwardTrigger = '<s-tab>'
+    end,
+  },
 
   { -- Ranger file manager
     'jensjpedersen/ranger_nvim',
@@ -123,23 +133,23 @@ return {
       vim.keymap.set('n', '<leader>ts', ':SymbolsOutline<CR>', { desc = 'Symbols Outline' })
     end,
   },
-{
-  "christoomey/vim-tmux-navigator",
-  cmd = {
-    "TmuxNavigateLeft",
-    "TmuxNavigateDown",
-    "TmuxNavigateUp",
-    "TmuxNavigateRight",
-    "TmuxNavigatePrevious",
+  {
+    'christoomey/vim-tmux-navigator',
+    cmd = {
+      'TmuxNavigateLeft',
+      'TmuxNavigateDown',
+      'TmuxNavigateUp',
+      'TmuxNavigateRight',
+      'TmuxNavigatePrevious',
+    },
+    keys = {
+      { '<c-h>', '<cmd><C-U>TmuxNavigateLeft<cr>' },
+      { '<c-j>', '<cmd><C-U>TmuxNavigateDown<cr>' },
+      { '<c-k>', '<cmd><C-U>TmuxNavigateUp<cr>' },
+      { '<c-l>', '<cmd><C-U>TmuxNavigateRight<cr>' },
+      { '<c-\\>', '<cmd><C-U>TmuxNavigatePrevious<cr>' },
+    },
   },
-  keys = {
-    { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
-    { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
-    { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
-    { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
-    { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
-  },
-}
 
   --{ -- Vista view and search LSP symbols and tags
   --  'liuchengxu/vista.vim',
