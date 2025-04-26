@@ -3,6 +3,21 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+  {
+  "vhyrro/luarocks.nvim",
+  priority = 1000, -- Very high priority is required, luarocks.nvim should run as the first plugin in your config.
+  config = true,
+  },
+
+  { -- Translate
+    'voldikss/vim-translator',
+    config = function()
+      vim.g.translator_target_lang = 'en'
+      vim.keymap.set('n', '<leader>dt', 'vip:TranslateR<CR>', { desc = 'Translate Paragraph' })
+      vim.keymap.set('v', '<leader>dt', ':TranslateR<CR>', { desc = 'Translate Paragraph' })
+    end,
+  },
+
   { -- Spellcheck keymap
     vim.keymap.set('n', '<leader>dw', ':setlocal spell spelllang=nb,en<CR>', { desc = 'Spellcheck' }),
   },
