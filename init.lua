@@ -347,7 +347,7 @@ require('lazy').setup({
       },
 
       -- Document existing key chains
-      require('which-key').add {
+      spec = {
         { '<leader>r', group = '[r]un' },
         { '<leader>c', group = '[c]ode' },
         { '<leader>d', group = '[d]ocument' },
@@ -357,12 +357,7 @@ require('lazy').setup({
         { '<leader>t', group = '[t]oggle' },
         { '<leader>f', group = '[f]ilemanager (ranger)' },
         { '<leader>h', group = 'Git [h]unk', mode = { 'n', 'v' } },
-      }
-    end,
-      spec = {
-        { '<leader>s', group = '[S]earch' },
-        { '<leader>t', group = '[T]oggle' },
-        { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+
       },
     },
   },
