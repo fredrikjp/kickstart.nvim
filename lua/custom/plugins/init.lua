@@ -44,20 +44,20 @@ return {
     end,
   },
 
-  { -- GitHub Copilot
-    'github/copilot.vim',
-    config = function()
-      vim.keymap.set('i', '<C-a>', 'copilot#Accept("\\<CR>")', {
-        expr = true,
-        replace_keycodes = false,
-      })
-      vim.keymap.set('i', '<C-w>', '<Plug>(copilot-accept-word)')
-      vim.keymap.set('i', '<C-l', '<Plug>(copilot-next)')
-      vim.keymap.set('i', '<C-h>', '<Plug>(copilot-prev)')
+--{ -- GitHub Copilot
+--  'github/copilot.vim',
+--  config = function()
+--    vim.keymap.set('i', '<C-a>', 'copilot#Accept("\\<CR>")', {
+--      expr = true,
+--      replace_keycodes = false,
+--    })
+--    vim.keymap.set('i', '<C-w>', '<Plug>(copilot-accept-word)')
+--    vim.keymap.set('i', '<C-l', '<Plug>(copilot-next)')
+--    vim.keymap.set('i', '<C-h>', '<Plug>(copilot-prev)')
 
-      vim.g.copilot_no_tab_map = true
-    end,
-  },
+--    vim.g.copilot_no_tab_map = true
+--  end,
+--},
 
   { -- Mini Nvim
     'echasnovski/mini.nvim',
