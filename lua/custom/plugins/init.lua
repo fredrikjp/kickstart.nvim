@@ -26,15 +26,15 @@ return {
     'mhinz/vim-startify',
   },
 
-  { -- Ultisnips
-    'SirVer/ultisnips',
-    requires = { 'honza/vim-snippets' },
-    config = function()
-      vim.g.UltiSnipsExpandTrigger = '<tab>'
-      vim.g.UltiSnipsJumpForwardTrigger = '<tab>'
-      vim.g.UltiSnipsJumpBackwardTrigger = '<s-tab>'
-    end,
-  },
+--{ -- Ultisnips
+--  'SirVer/ultisnips',
+--  requires = { 'honza/vim-snippets' },
+--  config = function()
+--    vim.g.UltiSnipsExpandTrigger = '<tab>'
+--    vim.g.UltiSnipsJumpForwardTrigger = '<tab>'
+--    vim.g.UltiSnipsJumpBackwardTrigger = '<s-tab>'
+--  end,
+--},
 
   { -- Ranger file manager
     'jensjpedersen/ranger_nvim',
