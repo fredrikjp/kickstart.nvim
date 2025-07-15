@@ -91,11 +91,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
 
 --_ Auto cd to current buffer
-vim.api.nvim_create_autocmd('VimEnter', {
-  callback = function()
-    vim.opt.autochdir = true
-  end,
-})
+vim.cmd('autocmd BufEnter * silent! lcd %:p:h')
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
